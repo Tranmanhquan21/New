@@ -1,12 +1,14 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 body{
     width: 100%;
 }
 .big_box{
-    background-image: url(/share/image/hero-bg.jpg);
+    background-image: url('./images/hero-bg.jpg');
     background-size: cover;
     background-attachment: fixed;
     height: 729px;
@@ -69,4 +71,180 @@ main .mid_main .circle i{
     font-size: 20px;
     padding-right: 10px;
     padding-top: 30px;
+}
+
+
+.Choose {
+    width: 100%;
+    background:url('./images/us-bg.jpg') no-repeat center/cover;
+    padding: 120px 250px 120px 250px;
+    background-attachment: fixed;
+}
+.Choose-title {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 70px;
+    position: relative;
+    
+}
+.Choose-title::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: red;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.Choose-list {
+    display: flex;
+    gap: 70px;
+    width: 100%;
+    color: white;
+}
+.Choose-item {
+    text-align: center; 
+}
+.Choose-item-title {
+    margin: 10px 0 10px 0;
+    font-weight: 900;      
+}
+.Healthy {
+    width: 100%;
+    background:url('./images/healthy-bg.jpg') no-repeat center/cover;
+    padding: 120px 250px 120px 250px;
+    text-align: center;
+    color: white;
+    background-attachment: fixed;
+}
+.Healthy-title {
+    font-size: 40px;
+    margin: 0px 0 30px 0;
+    font-weight: 900;  
+}
+.Healthy-text {
+    font-size: 18px;
+    line-height: 1.4;
+}
+.Healthy-btn {
+    padding: 10px 32px;
+    border: 2px solid white;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 30px;
+}
+.Trainer {
+    color: white;
+}
+.Trainer-box {
+    display: flex;
+    gap:30px;
+    
+}
+.Trainer-box-item {
+    text-align: center;
+
+}
+.Trainer-box-name {
+    font-size: 20px;
+    font-weight: i00;
+    margin-bottom: 20px;
+}
+.Trainer-box-contains {
+    position: relative;
+
+}
+.Trainer-box-img {
+    border-radius: 16px;
+
+}
+.Trainer-box-social {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    width: 55%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+.Trainer-box-social i {
+    color: #dc5620;
+    font-size: 25px;
+    transition: 0.2s linear;
+}
+.Trainer-box-social i:hover {
+    color: #e34505;
+}
+.Contact {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    background-color: #27223f;
+    color: white;
+}
+.Contact-img {
+    width: 50%;
+}
+.Contact-right {
+    width: 50%;
+    margin-top: 200px;
+}
+.Contact-title {
+    font-size: 35px;
+    font-weight: 1200;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+}
+.Contact-title::after {
+    content: "";
+    width: 55px;
+    height: 4px;
+    background-color: red;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+.Contact-input {
+    width: 80%;
+    padding: 14px 10px;
+    font-size: 18px;
+    outline: none;
+    margin-bottom: 20px;
+    border-radius: 0px;
+}
+.Contact-input-mess {
+    padding: 40px 10px;
+}
+.Contact-btn {
+    padding: 10px 60px;
+    background-color: #ff2953;
+    text-transform: uppercase;
+    display: inline;
+    margin: 90px 0 0 auto;
+    width: 60px;
+}
+.Footer {
+    background-color: #252233;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    color: white;
+    padding: 60px 0 ;
+}
+.Footer-item {
+    text-align: center;
+    cursor: pointer;
+}
+.Footer-item img {
+    margin-bottom: 20px;
 }
